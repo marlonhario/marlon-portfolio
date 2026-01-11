@@ -20,10 +20,11 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
+          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute [mask-image:radial-gradient(circle,black_60%,transparent_100%)]
+         [-webkit-mask-image:radial-gradient(circle,black_60%,transparent_100%)]"
         >
           <Image
-            src={"/assets/photo.png"}
+            src={"/assets/photo_11.png"}
             priority
             quality={100}
             fill
@@ -43,7 +44,7 @@ const Photo = () => {
             cx="253"
             cy="253"
             r="250"
-            stroke="#00ff99"
+            stroke="#733435"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
