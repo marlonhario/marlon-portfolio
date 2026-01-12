@@ -40,7 +40,7 @@ const Nav = () => {
               link.path === pathname && "text-accent  border-b-2 border-accent "
             }`}
           >
-            {link.name} daw
+            {link.name}
           </Link>
         );
       })}
