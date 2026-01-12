@@ -54,7 +54,7 @@ const Services = () => {
                 className="flex-1 flex flex-col justify-center gap-6 group"
               >
                 <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:[-webkit-text-stroke:1px_#00ff99] transition-all duration-500">
+                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:[-webkit-text-stroke:1px_#FA8146] transition-all duration-500">
                     {service.num}
                   </div>
                   <Link

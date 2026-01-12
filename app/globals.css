@@ -63,7 +63,9 @@
   --muted: oklch(0.968 0.007 247.896);
   --muted-foreground: oklch(0.554 0.046 257.417);
   /* --accent: oklch(0.968 0.007 247.896); */
-  --accent: oklch(0.8791 0.2134 155.95);
+  /* --accent: oklch(0.8791 0.2134 155.95); */
+  --accent: #FA8146;
+;
   /* --accent: "#00ff99"; */
   --accent-foreground: oklch(0.208 0.042 265.755);
   --destructive: oklch(0.577 0.245 27.325);
@@ -124,7 +126,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary bg-primary text-white/80 leading-loose;
   }
   .h1 {
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
@@ -141,6 +143,10 @@
 
   .group:hover .text-outline-hover {
     -webkit-text-stroke: 1px #00ff99;
+  }
+
+  button {
+    cursor: pointer;
   }
 }
 

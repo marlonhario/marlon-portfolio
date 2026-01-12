@@ -81,7 +81,7 @@ const Contact = () => {
                 placeholder="Type your message here"
               />
 
-              <Button className="max-w-40">Send message</Button>
+              <Button variant={"outline"} className="max-w-40">Send message</Button>
             </form>
           </div>
 

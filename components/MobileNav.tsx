@@ -1,9 +1,8 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
-import { icons } from "lucide-react";
 import Link from "next/link";
 
 const links = [
@@ -33,16 +32,17 @@ const MobileNav = () => {
         <nav className="flex flex-col justify-center items-center gap-8">
           {links.map((link, index) => {
             return (
-              <Link
-                href={link.path}
-                key={index}
-                className={`${
-                  link.path === pathname &&
-                  "text-accent border-b-2 border-accent"
-                } text-xl capitalize hover:text-accent transition-all`}
-              >
-                {link.name}
-              </Link>
+              <SheetClose asChild key={index}>
+                <Link
+                  href={link.path}
+                  className={`${
+                    link.path === pathname &&
+                    "text-accent border-b-2 border-accent"
+                  } text-xl capitalize hover:text-accent transition-all`}
+                >
+                  {link.name}
+                </Link>
+              </SheetClose>
             );
           })}
         </nav>

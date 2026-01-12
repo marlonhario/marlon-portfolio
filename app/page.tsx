@@ -13,7 +13,7 @@ export default function Home() {
             <span className="text-xl">Sotware Developer</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br />{" "}
-              <span className="text-accent">Marlon Hario</span>
+              <span className="text-white">Marlon Hario</span>
             </h1>
             <p className="max-w-125 mb-9 text-white/80">
               A Software Developer with experience in building modern
