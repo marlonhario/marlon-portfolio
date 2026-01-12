@@ -21,7 +21,7 @@ import {
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const about = {
-  title: "About me",
+  title: "About Me",
   description:
     "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   info: [
@@ -62,9 +62,11 @@ const about = {
 
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My experience",
+  title: "My Experience",
   description:
-    "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "I am a Senior React Developer with extensive experience building scalable, high-performance web applications. I specialize in creating clean, maintainable user interfaces using React, Next.js, and TypeScript, with a strong focus on performance, accessibility, and user experience.\n\n" +
+    "Beyond frontend development, I am comfortable working across the stack — handling backend development, API integration, and data management to deliver complete, production-ready solutions. I also place a strong emphasis on application quality, implementing end-to-end (E2E) testing to ensure reliability and long-term stability.\n\n"+
+    "I enjoy working on complex systems, improving existing codebases, and collaborating closely with teams to turn business requirements into robust technical solutions. My approach combines strong technical expertise, attention to detail, and a commitment to writing clean, scalable code.",
   items: [
     {
       company: "Tech Solutions Inc.",
@@ -101,7 +103,7 @@ const experience = {
 
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
+  title: "My Education",
   description:
     "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   items: [
@@ -134,7 +136,7 @@ const education = {
 };
 
 const skills = {
-  title: "My skills",
+  title: "My Skills",
   description:
     "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   skillList: [
@@ -189,9 +191,9 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="experience">Professional Experience</TabsTrigger>
+            <TabsTrigger value="education">Academic Background</TabsTrigger>
+            <TabsTrigger value="skills">Technical Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 
@@ -199,7 +201,7 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[1500px] text-white/60 mx-auto xl:mx-0 whitespace-pre-line">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">

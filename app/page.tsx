@@ -5,20 +5,21 @@ import { Button } from "@/components/ui/button";
 import { FaDownload } from "react-icons/fa";
 
 export default function Home() {
-  return (
+  const intro =
+    "I build scalable, reliable, and user-friendly web applications, bridging frontend excellence with backend integration and data-driven solutions.";
+  
+    return (
     <section className="h-full 2xl:pb-24">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-10">
           <div className="text-center xl:text-left order-2 xl:order-0">
-            <span className="text-xl">Sotware Developer</span>
+            <span className="text-xl">Senior Frontend Engineer</span>
             <h1 className="h1 mb-6">
               Hello, I&apos;m <br />{" "}
               <span className="text-white">Marlon Hario</span>
             </h1>
-            <p className="max-w-125 mb-9 text-white/80">
-              A Software Developer with experience in building modern
-              applications and systems. I focus on delivering high-quality
-              solutions that meet real-world needs.
+            <p className="max-w-125 mb-9 text-white/80 whitespace-pre-line">
+              {intro}
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant={"outline"} size={"lg"} className="uppercase  ">

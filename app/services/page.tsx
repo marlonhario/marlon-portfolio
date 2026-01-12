@@ -7,30 +7,42 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Senior Frontend / React Development",
     description:
-      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Designing and building scalable, high-performance user interfaces using modern React.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Full-Stack Web Development",
     description:
-      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Delivering end-to-end web solutions by handling both frontend and backend.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Backend Development",
     description:
-      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Building reliable and secure backend systems to support web applications.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "End-to-End (E2E) Testing",
     description:
-      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Ensuring application reliability through comprehensive automated testing.",
+    href: "",
+  },
+  {
+    num: "04",
+    title: "Data Management & Integration",
+    description: "Handling application data efficiently and securely.",
+    href: "",
+  },
+  {
+    num: "04",
+    title: "Code Quality & Maintenance",
+    description: "Improving and maintaining existing codebases.",
     href: "",
   },
 ];
@@ -57,17 +69,17 @@ const Services = () => {
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:[-webkit-text-stroke:1px_#FA8146] transition-all duration-500">
                     {service.num}
                   </div>
-                  <Link
+                  {/* <Link
                     href={service.href}
                     className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
                     <BsArrowDownRight className="text-primary text-3xl" />
-                  </Link>
+                  </Link> */}
                 </div>
                 {/* title */}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                <h5 className="text-[25px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {service.title}
-                </h2>
+                </h5>
                 {/* description */}
                 <p className="text-white/60">{service.description}</p>
                 {/* border */}
