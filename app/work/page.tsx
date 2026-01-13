@@ -23,7 +23,7 @@ const projects = [
       "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/work/thumb1.png",
-    live: "",
+    live: "https://shop-ease-kohl-two.vercel.app/",
     github: "",
   },
   {
