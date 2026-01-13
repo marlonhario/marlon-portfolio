@@ -22,7 +22,7 @@ const projects = [
     description:
       "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
+    image: "/assets/work/ecommerce.png",
     live: "https://shop-ease-kohl-two.vercel.app/",
     github: "",
   },
@@ -142,7 +142,8 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          priority
+                          className="object-top"
                           alt=""
                         />
                       </div>
