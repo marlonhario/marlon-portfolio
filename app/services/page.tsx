@@ -34,13 +34,13 @@ const services = [
     href: "",
   },
   {
-    num: "04",
+    num: "05",
     title: "Data Management & Integration",
     description: "Handling application data efficiently and securely.",
     href: "",
   },
   {
-    num: "04",
+    num: "06",
     title: "Code Quality & Maintenance",
     description: "Improving and maintaining existing codebases.",
     href: "",
