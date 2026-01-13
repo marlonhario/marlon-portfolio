@@ -64,9 +64,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "I am a Senior React Developer with extensive experience building scalable, high-performance web applications. I specialize in creating clean, maintainable user interfaces using React, Next.js, and TypeScript, with a strong focus on performance, accessibility, and user experience.\n\n" +
-    "Beyond frontend development, I am comfortable working across the stack — handling backend development, API integration, and data management to deliver complete, production-ready solutions. I also place a strong emphasis on application quality, implementing end-to-end (E2E) testing to ensure reliability and long-term stability.\n\n"+
-    "I enjoy working on complex systems, improving existing codebases, and collaborating closely with teams to turn business requirements into robust technical solutions. My approach combines strong technical expertise, attention to detail, and a commitment to writing clean, scalable code.",
+    "I am a Senior React Developer with strong experience building scalable, high-performance web applications using React, Next.js, and TypeScript. I focus on clean, maintainable code with an emphasis on performance, accessibility, and user experience, while also working comfortably across the stack on backend logic, APIs, and data management. I prioritize application quality through end-to-end testing and enjoy tackling complex systems, improving existing codebases, and collaborating with teams to turn business requirements into reliable, production-ready solutions.",
   items: [
     {
       company: "Tech Solutions Inc.",
