@@ -17,14 +17,22 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "",
+    title: "Guest Checkout E-Commerce System",
     description:
-      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "A modern e-commerce system that allows users to browse products, add items to cart, and complete payments via PayMongo without requiring user authentication, reducing friction and improving conversion rates.",
+    stack: [
+      { name: "Next.js" },
+      { name: "React.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "shadcn/ui" },
+      { name: "PayMongo" },
+      { name: "Swiper.js" },
+    ],
     image: "/assets/work/ecommerce.png",
     live: "https://shop-ease-kohl-two.vercel.app/",
-    github: "",
+    github: "https://github.com/marlonhario/ShopEase",
   },
   {
     num: "02",
@@ -66,7 +74,7 @@ const Work = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex flex-col justify-center pt-6 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center pt-6 pb-12 xl:px-0"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
@@ -75,23 +83,6 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
-              </h2>
-
-              <p className="text-white/60">{project.description}</p>
-
-              <ul className="flex gap-4">
-                {project.stack.map((Item, index) => {
-                  return (
-                    <li key={index} className="text-xl text-accent">
-                      {Item.name}
-                      {index !== project.stack.length - 1 && ","}
-                    </li>
-                  );
-                })}
-              </ul>
 
               <div className="border border-white/20"></div>
 
@@ -122,6 +113,27 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
               </div>
+
+              <div className="gap-2 flex flex-col">
+                <h2 className="text-[30px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                  {project.title}
+                </h2>
+                <h2 className="text-[20px] font-bold leading-none text-white/50 group-hover:text-accent transition-all duration-500 capitalize">
+                  {project.category}
+                </h2>
+              </div>
+              <p className="text-white/60">{project.description}</p>
+
+              <ul className="flex gap-4 flex-wrap">
+                {project.stack.map((Item, index) => {
+                  return (
+                    <li key={index} className="text-accent">
+                      {Item.name}
+                      {index !== project.stack.length - 1 && ","}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
