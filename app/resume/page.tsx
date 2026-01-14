@@ -1,13 +1,5 @@
 "use client";
 
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
 import {
   FaHtml5,
@@ -17,8 +9,50 @@ import {
   FaFigma,
   FaNodeJs,
 } from "react-icons/fa";
-
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiSass,
+  SiStyledcomponents,
+  SiShadcnui,
+  SiRedux,
+  SiReactquery,
+  SiEslint,
+  SiPrettier,
+  SiVite,
+  SiStripe,
+  SiAuth0,
+  SiJsonwebtokens,
+  SiVercel,
+  SiJest,
+  SiTestinglibrary,
+  SiPhp,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiSqlite,
+  SiBootstrap,
+  SiLaravel,
+  SiExpress,
+  SiGraphql,
+  SiApollographql,
+  SiSocketdotio,
+  SiAxios,
+  SiPostman,
+  SiTypescript,
+  SiXampp,
+  SiSublimetext,
+  SiNotepadplusplus,
+  SiGit,
+} from "react-icons/si";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const about = {
   title: "About Me",
@@ -135,41 +169,172 @@ const education = {
 
 const skills = {
   title: "My Skills",
-  description:
-    "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  description: "",
   skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
-    },
     {
       icon: <FaJs />,
       name: "javascript",
     },
     {
       icon: <FaReact />,
-      name: "react.js",
+      name: "React.js",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "TypeScript",
     },
     {
       icon: <SiNextdotjs />,
-      name: "next.js",
+      name: "Next.js",
     },
     {
       icon: <SiTailwindcss />,
-      name: "tailwind.css",
+      name: "Tailwind CSS",
     },
     {
       icon: <FaNodeJs />,
       name: "node.js",
     },
     {
+      icon: <SiExpress />,
+      name: "Express.js",
+    },
+    {
+      icon: <SiAuth0 />,
+      name: "Auth0",
+    },
+    {
+      icon: <SiJsonwebtokens />,
+      name: "JWT",
+    },
+    {
+      icon: <SiStripe />,
+      name: "Stripe",
+    },
+    {
+      icon: <SiRedux />,
+      name: "Redux / Redux Toolkit",
+    },
+    {
+      icon: <SiReactquery />,
+      name: "anStack React Query",
+    },
+    {
+      icon: <SiShadcnui />,
+      name: "shadcn/ui",
+    },
+    {
+      icon: <SiVercel />,
+      name: "Vercel",
+    },
+    {
+      icon: <SiGit />,
+      name: "Git",
+    },
+    {
+      icon: <SiJest />,
+      name: "Jest",
+    },
+    {
+      icon: <SiTestinglibrary />,
+      name: "Testing Library",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+    },
+    {
+      icon: <SiSqlite />,
+      name: "SQLite",
+    },
+    {
+      icon: <SiGraphql />,
+      name: "GraphQL",
+    },
+    {
+      icon: <SiApollographql />,
+      name: "Apollo",
+    },
+    {
+      icon: <SiVite />,
+      name: "SiVite",
+    },
+    {
+      icon: <SiSocketdotio />,
+      name: "Socket.IO",
+    },
+    {
       icon: <FaFigma />,
       name: "figma",
     },
+    {
+      icon: <SiPostman />,
+      name: "Postman",
+    },
+    {
+      icon: <SiAxios />,
+      name: "Axios",
+    },
+    {
+      icon: <SiEslint />,
+      name: "ESLint",
+    },
+    {
+      icon: <SiPrettier />,
+      name: "Prettier",
+    },
+    {
+      icon: <FaHtml5 />,
+      name: "html 5",
+    },
+    {
+      icon: <FaCss3 />,
+      name: "CSS3",
+    },
+    {
+      icon: <SiSass />,
+      name: "Sass / SCSS",
+    },
+    {
+      icon: <SiStyledcomponents />,
+      name: "styled-components",
+    },
+    {
+      icon: <SiBootstrap />,
+      name: "Bootstrap",
+    },
+    {
+      icon: <SiPhp />,
+      name: "PHP",
+    },
+    {
+      icon: <SiLaravel />,
+      name: "Laravel",
+    },
+    {
+      icon: <SiXampp />,
+      name: "XAMPP",
+    },
+    {
+      icon: <SiSublimetext />,
+      name: "Sublime Text",
+    },
+    {
+      icon: <SiNotepadplusplus />,
+      name: "Notepad++",
+    },
+    // {
+    //   icon: <SiAndroidstudio />,
+    //   name: "Android Studio (Emulator)",
+    // },
   ],
 };
 
@@ -189,7 +354,9 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Professional Experience</TabsTrigger>
+            <TabsTrigger value="experience">
+              Professional Experience
+            </TabsTrigger>
             <TabsTrigger value="education">Academic Background</TabsTrigger>
             <TabsTrigger value="skills">Technical Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
@@ -264,26 +431,31 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="sm:h-[350px] h-[500px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group flex-col">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                                <span className="text-white/60">
+                                  {skill.name}
+                                </span>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
@@ -299,7 +471,10 @@ const Resume = () => {
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
-                      <li key={index} className="flex items-start justify-center xl:justify-start gap-4">
+                      <li
+                        key={index}
+                        className="flex items-start justify-center xl:justify-start gap-4"
+                      >
                         <span className="text-white/60">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>

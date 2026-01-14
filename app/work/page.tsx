@@ -22,13 +22,13 @@ const projects = [
     description:
       "A modern e-commerce system that allows users to browse products, add items to cart, and complete payments via PayMongo without requiring user authentication, reducing friction and improving conversion rates.",
     stack: [
-      { name: "Next.js" },
-      { name: "React.js" },
-      { name: "TypeScript" },
-      { name: "Tailwind CSS" },
-      { name: "shadcn/ui" },
-      { name: "PayMongo" },
-      { name: "Swiper.js" },
+      { icon: "", name: "Next.js" },
+      { icon: "", name: "React.js" },
+      { icon: "", name: "TypeScript" },
+      { icon: "", name: "Tailwind CSS" },
+      { icon: "", name: "shadcn/ui" },
+      { icon: "", name: "PayMongo" },
+      { icon: "", name: "Swiper.js" },
     ],
     image: "/assets/work/ecommerce.png",
     live: "https://shop-ease-kohl-two.vercel.app/",
@@ -74,7 +74,7 @@ const Work = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex flex-col justify-center pt-6 pb-12 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center pt-6 xl:px-0"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
