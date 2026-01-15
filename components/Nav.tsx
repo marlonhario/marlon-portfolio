@@ -37,7 +37,7 @@ const Nav = () => {
             href={link.path}
             key={index}
             className={`${
-              link.path === pathname && "text-accent  border-b-2 border-accent "
+              link.path === pathname && "text-accent  border-b-2 border-accent"
             }`}
           >
             {link.name}

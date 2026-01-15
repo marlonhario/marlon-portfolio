@@ -2,10 +2,10 @@
 import CountUp from "react-countup";
 
 const stats = [
-  { num: 12, text: "Years of experience" },
-  { num: 26, text: "Projects completed" },
-  { num: 8, text: "Technologies mastered" },
-  { num: 500, text: "Code commits" },
+  { num: 9, text: "Years of experience" },
+  { num: 30, text: "Projects" },
+  { num: 40, text: "Technologies" },
+  { num: 1000, text: "Code commits" },
 ];
 
 const Stats = () => {
@@ -16,15 +16,16 @@ const Stats = () => {
           {stats.map((item, index) => {
             return (
               <div
-                className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
+                className="flex-1 flex gap-2 items-center justify-center xl:justify-start"
                 key={index}
               >
                 <CountUp
                   end={item.num}
                   duration={5}
                   delay={2}
-                  className="text-4xl xl:text-6xl font-extrabold"
+                  className="text-4xl xl:text-5xl font-extrabold"
                 />
+                <p className="text-4xl">+</p>
                 <p
                   className={`${
                     item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
