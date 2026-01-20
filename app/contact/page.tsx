@@ -34,14 +34,7 @@ const info = [
 
 const Contact = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
-      className="py-6 2xl:pb-24"
-    >
+    <motion.section className="py-6 2xl:pb-24">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:w-[54%] order-2 xl:order-none">
@@ -81,7 +74,9 @@ const Contact = () => {
                 placeholder="Type your message here"
               />
 
-              <Button variant={"outline"} className="max-w-40">Send message</Button>
+              <Button variant={"outline"} className="max-w-40">
+                Send message
+              </Button>
             </form>
           </div>
 

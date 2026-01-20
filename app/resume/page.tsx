@@ -53,91 +53,13 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
-const about = {
-  title: "About Me",
-  description:
-    "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Marlon Hario",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "12+ years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "oirah83",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "Filipino",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "hariomarlon83@gmail.com",
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Tagalog, Visaya",
-    },
-  ],
-};
-
-const experience = {
-  icon: "/assets/resume/badge.svg",
-  title: "My Experience",
-  description:
-    "I am a Senior React Developer with strong experience building scalable, high-performance web applications using React, Next.js, and TypeScript. I focus on clean, maintainable code with an emphasis on performance, accessibility, and user experience, while also working comfortably across the stack on backend logic, APIs, and data management. I prioritize application quality through end-to-end testing and enjoy tackling complex systems, improving existing codebases, and collaborating with teams to turn business requirements into reliable, production-ready solutions.",
-  items: [
-    {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
-    },
-    {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
-    },
-    {
-      company: "Tech Academey",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
-    },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
-    },
-  ],
-};
+import Link from "next/link";
+import { experience } from "@/data/data";
 
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
-  description:
-    "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  description: "",
   items: [
     {
       institution: "Online Course Platform",
@@ -338,16 +260,48 @@ const skills = {
   ],
 };
 
+const about = {
+  title: "About Me",
+  description: "",
+  info: [
+    {
+      fieldName: "Name",
+      fieldValue: "Marlon Hario",
+    },
+    {
+      fieldName: "Phone",
+      fieldValue: "(+40) 321 654 678",
+    },
+    {
+      fieldName: "Experience",
+      fieldValue: "12+ years",
+    },
+    {
+      fieldName: "Skype",
+      fieldValue: "oirah83",
+    },
+    {
+      fieldName: "Nationality",
+      fieldValue: "Filipino",
+    },
+    {
+      fieldName: "Email",
+      fieldValue: "hariomarlon83@gmail.com",
+    },
+    {
+      fieldName: "Freelance",
+      fieldValue: "Available",
+    },
+    {
+      fieldName: "Languages",
+      fieldValue: "English, Tagalog, Visaya",
+    },
+  ],
+};
+
 const Resume = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
-      className="min-h-[80vh] flex py-12 xl:py-0"
-    >
+    <motion.div className="min-h-[80vh] flex py-12 xl:py-0">
       <div className="container mx-auto">
         <Tabs
           defaultValue="experience"
@@ -362,31 +316,51 @@ const Resume = () => {
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 
-          <div className="min-h-[70vh] w-full">
+          <div className="min-h-fit w-full">
+            {/* Professional Experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[1500px] text-white/60 mx-auto xl:mx-0 whitespace-pre-line">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                <ScrollArea className="h-[600px]">
+                  <ul className="grid grid-cols-1 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
+                          className="bg-[#232329]  py-6 px-10 rounded-xl flex flex-col justify-center items-start"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <div className="min-h-[90px]">
-                            <h3 className="max-w-[300px]  text-center lg:text-left">
-                              {item.position}
+                          <div className="mb-5">
+                            <h3 className="text-left">
+                              {item.position} at {item.company}
                             </h3>
-                            <p className="text-white/60">{item.company}</p>
+                            <p className="text-white/60 text-left">
+                              {item.project}
+                            </p>
+                            <Link href={item.url ?? ""}>
+                              <p className="text-left">{item.url}</p>
+                            </Link>
                           </div>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
+                          <div className="flex gap-3 flex-col">
+                            {item.responsibilities?.map((work, index) => (
+                              <div
+                                className="flex justify-start items-start"
+                                key={index}
+                              >
+                                <span className="w-[6px] h-[6px] rounded-full bg-accent mt-1 mr-3"></span>
+                                <p className="text-white/60 leading-5 text-left">
+                                  {work}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="flex mt-5 flex-col">
+                            <p className="text-accent leading-5 text-left">
+                              {item.techs}
+                            </p>
                           </div>
                         </li>
                       );
@@ -396,6 +370,7 @@ const Resume = () => {
               </div>
             </TabsContent>
 
+            {/* Academic Background */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
@@ -426,6 +401,7 @@ const Resume = () => {
               </div>
             </TabsContent>
 
+            {/* Technical Skills */}
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -462,6 +438,7 @@ const Resume = () => {
               </div>
             </TabsContent>
 
+            {/* About me */}
             <TabsContent
               value="about"
               className="w-full text-center xl:text-left"
