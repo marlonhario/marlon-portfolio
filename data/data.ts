@@ -40,9 +40,10 @@ export const experience = {
       company: "DrTalk",
       position: "Senior React Developer",
       duration: "2024-03 – 2024-04",
-      project: "HIPAA compliant communication platform and business tools for the dental office",
+      project:
+        "HIPAA compliant communication platform and business tools for the dental office",
       url: "https://www.drtalk.com/",
-      techs: "Typescript, React JS, Next JS, SignalR.",
+      techs: "Typescript, React JS, Next JS and SignalR.",
       responsibilities: [
         "Primarily focused on front-end development.",
         "Created SignalR queries to enable real-time communication for the DrTalk project.",
@@ -57,7 +58,8 @@ export const experience = {
       duration: "2022-06 – 2023-05",
       project: "Market Investment App",
       url: "https://www.prism.markets/",
-      techs: "Typescript, React JS, Recharts, Redux, Axios, React Query and sass.",
+      techs:
+        "Typescript, React JS, Recharts, Redux, Axios, React Query and sass.",
       responsibilities: [
         "Configured charts to display data statistics and analytics.",
         "Fixed bugs and improved error-handling mechanisms.",
@@ -74,7 +76,8 @@ export const experience = {
       duration: "2021-10 – 2022-06",
       project: "Task Management System",
       url: "https://www.gsquared.com.au/",
-      techs: "Typescript, React JS, React Query, Axios, Material UI, React native, redux tookit , Redux and sass.",
+      techs:
+        "Typescript, React JS, React Query, Axios, Material UI, React native, redux tookit, Redux and sass.",
       responsibilities: [
         "Set up the user interface from scratch using TypeScript, React.js, Material UI, Axios, and React Query.",
         "Developed custom hooks for components to encapsulate logic and improve reusability.",
@@ -167,6 +170,65 @@ export const experience = {
         "Create end-to-end tests using Playwright.",
         "Primarily handle front-end development using a microservices architecture.",
       ],
+    },
+  ],
+};
+
+export const about = {
+  title: "About Me",
+  description: "",
+  info: [
+    {
+      fieldName: "Name",
+      fieldValue: "Marlon C. Hario",
+    },
+    {
+      fieldName: "Phone",
+      fieldValue: "(+63) 960 740 5360",
+    },
+    {
+      fieldName: "Experience",
+      fieldValue: "9+ years",
+    },
+    // {
+    //   fieldName: "Skype",
+    //   fieldValue: "oirah83",
+    // },
+    {
+      fieldName: "Nationality",
+      fieldValue: "Filipino",
+    },
+    {
+      fieldName: "Email",
+      fieldValue: "hariomarlon83@gmail.com",
+    },
+    {
+      fieldName: "Civil Status",
+      fieldValue: "Married",
+    },
+    {
+      fieldName: "Gender",
+      fieldValue: "Male",
+    },
+    {
+      fieldName: "Age",
+      fieldValue: "33",
+    },
+    // {
+    //   fieldName: "Freelance",
+    //   fieldValue: "Available",
+    // },
+    {
+      fieldName: "Languages",
+      fieldValue: "English, Tagalog, Visaya",
+    },
+    {
+      fieldName: "Religion",
+      fieldValue: "Roman Catholic",
+    },
+    {
+      fieldName: "Place of Birth",
+      fieldValue: "Badian, Cebu City PH",
     },
   ],
 };

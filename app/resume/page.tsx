@@ -54,7 +54,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Link from "next/link";
-import { experience } from "@/data/data";
+import { about, experience } from "@/data/data";
 
 const education = {
   icon: "/assets/resume/cap.svg",
@@ -260,45 +260,6 @@ const skills = {
   ],
 };
 
-const about = {
-  title: "About Me",
-  description: "",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Marlon Hario",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "12+ years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "oirah83",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "Filipino",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "hariomarlon83@gmail.com",
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Tagalog, Visaya",
-    },
-  ],
-};
-
 const Resume = () => {
   return (
     <motion.div className="min-h-[80vh] flex py-12 xl:py-0">
@@ -445,18 +406,18 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
                       <li
                         key={index}
-                        className="flex items-start justify-center xl:justify-start gap-4"
+                        className="flex items-start justify-start gap-4"
                       >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
+                        <span className="text-white/60 text-left">{item.fieldName}:</span>
+                        <span className="text-xl text-left">{item.fieldValue}</span>
                       </li>
                     );
                   })}
