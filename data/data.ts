@@ -87,20 +87,18 @@ export const experience = {
       ],
     },
     {
-      company: "EncompaaS",
-      position: "Senior React Developer",
-      duration: "2024-06 – 2025-8",
-      project: "Information Management System",
-      url: "https://encompaas.cloud/",
-      techs: "Typescript, React JS, Next JS, MUI, OData and Storybook.",
+      company: "Event Espresso",
+      position: "Front-end Developer",
+      duration: "2021-10 - 2022-06",
+      project: "Ticketing plugin for wordpress",
+      url: "https://eventespresso.com/",
+      techs:
+        "Typescript, React JS, React Query, Axios, SASS, Jest, Playwright and Redux.",
       responsibilities: [
-        "Create reusable base components.",
-        "Develop new features based on Figma designs.",
-        "Modernize legacy code and perform refactoring.",
-        "Review teammates' pull requests.",
-        "Fix bugs and issues.",
-        "Create end-to-end tests using Playwright.",
-        "Primarily handle front-end development using a microservices architecture.",
+        "Set up Jest for front-end testing.",
+        "Created unit tests for front-end components and functions.",
+        "Developed new features for plugins.",
+        "Assisted in fixing bugs and resolving issues.",
       ],
     },
     {
@@ -232,7 +230,6 @@ export const about = {
     },
   ],
 };
-
 
 export const services = [
   {
