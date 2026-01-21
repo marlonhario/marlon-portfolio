@@ -21,8 +21,8 @@ import { services as servicesCategory } from "@/data/data";
 const info = [
   {
     icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+40) 321 654 876",
+    title: "Mobile",
+    description: "0968 740 5360",
   },
   {
     icon: <FaEnvelope />,
@@ -32,7 +32,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Code Corner, Tech Town 13579",
+    description: "Blk 23, Lot 6 3rd st.Villa Magsanoc Sbd, Tagum City, Davao del Norte, 8100",
   },
 ];
 
@@ -54,13 +54,12 @@ const Contact = () => {
             >
               <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-                eaque iure vel? Quas, quisquam.
+                Have a project in mind? Let’s talk and build something great together.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="text" name="firstname" placeholder="Firstname" />
-                <Input type="text" name="lastname" placeholder="Lastname" />
+                <Input type="text" name="firstname" placeholder="First name" />
+                <Input type="text" name="lastname" placeholder="Last name" />
                 <Input type="email" name="email" placeholder="Email address" />
                 <Input type="text" name="phone" placeholder="Phone number" />
               </div>

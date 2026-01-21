@@ -38,12 +38,12 @@ export async function submitContactForm(
         error: "Please enter a valid email address",
       };
 
-    const reactRes = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: [data.email],
-      subject: "Thank you for contacting me",
-      react: ContactThankYouEmail(),
-    });
+    // const reactRes = await resend.emails.send({
+    //   from: "onboarding@resend.dev",
+    //   to: [data.email],
+    //   subject: "Thank you for contacting me",
+    //   react: ContactThankYouEmail(),
+    // });
 
     const { error } = await resend.emails.send({
       from: "onboarding@resend.dev",
@@ -52,8 +52,7 @@ export async function submitContactForm(
       react: EmailReceived(data),
     });
 
-    if (error || reactRes) {
-      console.error("Resend error:", error);
+    if (error) {
       return {
         success: false,
         error: "Failed to send email. Please try again.",
