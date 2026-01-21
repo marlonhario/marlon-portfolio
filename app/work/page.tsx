@@ -68,7 +68,7 @@ const Work = () => {
   };
 
   return (
-    <motion.section className="min-h-[80vh] flex flex-col justify-center pt-6 xl:px-0">
+    <motion.section className="min-h-[80vh] flex flex-col pt-6 xl:px-0">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
@@ -117,7 +117,7 @@ const Work = () => {
               </div>
               <p className="text-white/60">{project.description}</p>
 
-              <ul className="flex gap-4 flex-wrap">
+              <ul className="flex gap-4 flex-wrap leading-3">
                 {project.stack.map((Item, index) => {
                   return (
                     <li key={index} className="text-accent">
