@@ -1,49 +1,7 @@
 "use client";
 
+import { services } from "@/data/data";
 import { motion } from "framer-motion";
-
-const services = [
-  {
-    num: "01",
-    title: "Senior Frontend / React Development",
-    description:
-      "Designing and building scalable, high-performance user interfaces using modern React.",
-    href: "",
-  },
-  {
-    num: "02",
-    title: "Full-Stack Web Development",
-    description:
-      "Delivering end-to-end web solutions by handling both frontend and backend.",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "Backend Development",
-    description:
-      "Building reliable and secure backend systems to support web applications.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "End-to-End (E2E) Testing",
-    description:
-      "Ensuring application reliability through comprehensive automated testing.",
-    href: "",
-  },
-  {
-    num: "05",
-    title: "Data Management & Integration",
-    description: "Handling application data efficiently and securely.",
-    href: "",
-  },
-  {
-    num: "06",
-    title: "Code Quality & Maintenance",
-    description: "Improving and maintaining existing codebases.",
-    href: "",
-  },
-];
 
 const Services = () => {
   return (

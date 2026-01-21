@@ -16,6 +16,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FormState, submitContactForm } from "./actions";
+import { services as servicesCategory } from "@/data/data";
 
 const info = [
   {
@@ -42,7 +43,6 @@ const Contact = () => {
   >(submitContactForm, {});
   const [service, setService] = useState("");
 
-  
   return (
     <motion.section className="py-6 2xl:pb-24">
       <div className="container mx-auto">
@@ -65,7 +65,7 @@ const Contact = () => {
                 <Input type="text" name="phone" placeholder="Phone number" />
               </div>
 
-              <input type="hidden" name="category" value={service} />
+              <input type="hidden" name="service" value={service} />
               <Select onValueChange={setService}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
@@ -73,9 +73,11 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    {servicesCategory.map((item) => (
+                      <SelectItem key={item.title} value={item.title}>
+                        {item.title}
+                      </SelectItem>
+                    ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>

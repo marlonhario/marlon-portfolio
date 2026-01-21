@@ -1,6 +1,7 @@
 "use server";
 
 import ContactThankYouEmail from "@/components/emails/contact-template";
+import { EmailReceived } from "@/components/emails/email-recived-template";
 import { Resend } from "resend";
 import { z } from "zod";
 
@@ -17,23 +18,38 @@ export async function submitContactForm(
 ): Promise<FormState> {
   try {
     const formSchema = z.object({
-      email: z.string().email(),
+      firstname: z.string().min(1, "First name is required"),
+      lastname: z.string().min(1, "Last name is required"),
+      email: z.string().email("Invalid email"),
+      phone: z.string().optional(),
+      service: z.string().min(1, "Service is required"),
+      message: z.string().min(1, "Message is required"),
     });
 
     const { data, success } = formSchema.safeParse(
       Object.fromEntries(formData.entries()),
     );
+
+    console.log({ data });
+
     if (!success)
       return {
         success: false,
         error: "Please enter a valid email address",
       };
 
-    const { error } = await resend.emails.send({
+    // const { error } = await resend.emails.send({
+    //   from: "onboarding@resend.dev",
+    //   to: ["hariomarlon83@gmail.com"],
+    //   subject: "Thank you for contacting me",
+    //   react: ContactThankYouEmail(),
+    // });
+
+    const { error }  = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: [data.email],
+      to: ["hariomarlon83@gmail.com"],
       subject: "Thank you for contacting me",
-      react: ContactThankYouEmail(),
+      react: EmailReceived(data),
     });
 
     if (error) {
