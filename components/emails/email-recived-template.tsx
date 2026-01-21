@@ -32,16 +32,16 @@ export const EmailReceived = (data: EmailProps) => (
           </Heading> */}
           <Section className="py-[27px] px-0"></Section>
           <Text className="mb-[15px] mx-0 mt-0 leading-[1.4] text-[15px] text-[#3c4149]">
-            email: {data.email};
+            email: {data.email}
           </Text>
           <Text className="mb-[15px] mx-0 mt-0 leading-[1.4] text-[15px] text-[#3c4149]">
-            phone: {data.phone};
+            phone: {data.phone}
           </Text>
           <Text className="mb-[15px] mx-0 mt-0 leading-[1.4] text-[15px] text-[#3c4149]">
-            service: {data.service};
+            service: {data.service}
           </Text>
           <Text className="mb-[15px] mx-0 mt-0 leading-[1.4] text-[15px] text-[#3c4149]">
-            message: {data.message};
+            message: {data.message}
           </Text>
         </Container>
       </Body>

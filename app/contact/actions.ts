@@ -38,21 +38,21 @@ export async function submitContactForm(
         error: "Please enter a valid email address",
       };
 
-    // const { error } = await resend.emails.send({
-    //   from: "onboarding@resend.dev",
-    //   to: ["hariomarlon83@gmail.com"],
-    //   subject: "Thank you for contacting me",
-    //   react: ContactThankYouEmail(),
-    // });
+    const reactRes = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: [data.email],
+      subject: "Thank you for contacting me",
+      react: ContactThankYouEmail(),
+    });
 
-    const { error }  = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: "onboarding@resend.dev",
       to: ["hariomarlon83@gmail.com"],
       subject: "Thank you for contacting me",
       react: EmailReceived(data),
     });
 
-    if (error) {
+    if (error || reactRes) {
       console.error("Resend error:", error);
       return {
         success: false,
