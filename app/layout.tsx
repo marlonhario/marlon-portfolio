@@ -12,8 +12,11 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Marlon Hario Portfolio",
-  description: "Portfolio",
+  title: "Marlon Hario | Senior Frontend Engineer | Frontend Developer",
+  description: "Senior Frontend Engineer specializing in Next.js, Tailwind, and React.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

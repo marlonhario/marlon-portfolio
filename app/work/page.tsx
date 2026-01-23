@@ -13,50 +13,9 @@ import {
 } from "@/components/ui/tooltip";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
-
-const projects = [
-  {
-    num: "01",
-    category: "",
-    title: "Guest Checkout E-Commerce System",
-    description:
-      "A modern e-commerce system that allows users to browse products, add items to cart, and complete payments via PayMongo without requiring user authentication, reducing friction and improving conversion rates.",
-    stack: [
-      { icon: "", name: "Next.js" },
-      { icon: "", name: "React.js" },
-      { icon: "", name: "TypeScript" },
-      { icon: "", name: "Tailwind CSS" },
-      { icon: "", name: "shadcn/ui" },
-      { icon: "", name: "PayMongo" },
-      { icon: "", name: "Swiper.js" },
-    ],
-    image: "/assets/work/ecommerce.png",
-    live: "https://shop-ease-kohl-two.vercel.app/",
-    github: "https://github.com/marlonhario/ShopEase",
-  },
-  {
-    num: "02",
-    category: "backend",
-    title: "project 2",
-    description:
-      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "UI/UX",
-    title: "project 3",
-    description:
-      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
-  },
-];
+import { Button } from "@/components/ui/button";
+import { ShareIcon } from "lucide-react";
+import { projects } from "@/data/data";
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -79,7 +38,7 @@ const Work = () => {
 
               <div className="border border-white/20"></div>
 
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4 hidden lg:inline-flex">
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -105,10 +64,31 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+              </div> */}
+
+              <div className="flex items-center gap-4">
+                <Link href={project.live}>
+                  <Button variant="outline" className="rounded-full">
+                    Live Demo
+                  </Button>
+                </Link>
+
+                {/* <Link href={project.github}>
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Github repository</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link> */}
               </div>
 
               <div className="gap-2 flex flex-col">
-                <h2 className="text-[30px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                <h2 className="text-[30px] font-bold leading-9 text-white group-hover:text-accent transition-all duration-500 capitalize">
                   {project.title}
                 </h2>
                 <h2 className="text-[20px] font-bold leading-none text-white/50 group-hover:text-accent transition-all duration-500 capitalize">

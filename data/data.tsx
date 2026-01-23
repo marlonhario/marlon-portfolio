@@ -525,3 +525,48 @@ export const services = [
     href: "",
   },
 ];
+
+
+export const projects = [
+  {
+    num: "01",
+    category: "",
+    title: "Guest Checkout E-Commerce System",
+    description:
+      "A modern e-commerce system that allows users to browse products, add items to cart, and complete payments via PayMongo without requiring user authentication, reducing friction and improving conversion rates.",
+    stack: [
+      { icon: "", name: "Next.js" },
+      { icon: "", name: "React.js" },
+      { icon: "", name: "TypeScript" },
+      { icon: "", name: "Tailwind CSS" },
+      { icon: "", name: "shadcn/ui" },
+      { icon: "", name: "PayMongo" },
+      { icon: "", name: "Swiper.js" },
+    ],
+    image: "/assets/work/ecommerce.png",
+    live: "https://shop-ease-kohl-two.vercel.app/",
+    github: "https://github.com/marlonhario/ShopEase",
+  },
+  {
+    num: "02",
+    category: "backend",
+    title: "project 2",
+    description:
+      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+    image: "/assets/work/thumb2.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "03",
+    category: "UI/UX",
+    title: "project 3",
+    description:
+      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+    image: "/assets/work/thumb3.png",
+    live: "",
+    github: "",
+  },
+];
