@@ -41,6 +41,7 @@ import {
   SiSublimetext,
   SiNotepadplusplus,
   SiGit,
+  SiSupabase,
 } from "react-icons/si";
 
 export const experience = {
@@ -177,7 +178,8 @@ export const experience = {
       duration: "2020-01 - 2020-08",
       project: "Business Intelligence and Data Analytics",
       url: "https://www.linkedin.com/company/sellgo/",
-      techs: "Typescript, React JS, Axios, SASS, csv-parse, highcharts, lodash, react-helmet, Semantic UI and Redux.",
+      techs:
+        "Typescript, React JS, Axios, SASS, csv-parse, highcharts, lodash, react-helmet, Semantic UI and Redux.",
       responsibilities: [
         "Developed UI and functionality for multi-step forms.",
         "Implemented CSV upload functionality with progress bars.",
@@ -197,7 +199,8 @@ export const experience = {
       duration: "2019-05 - 2020-01",
       project: "Hospital management and healthcare",
       url: "https://www.segworks.com/",
-      techs: "Typescript, Javascript, MySQL, MongoDB, NoSQL, Express, Node JS, React JS, html/html5, css/css3, Ajax, jQuery, Bootstrap, PHP, Yii PHP, Jasper Reports, Laravel, Vue JS and Redux.",
+      techs:
+        "Typescript, Javascript, MySQL, MongoDB, NoSQL, Express, Node JS, React JS, html/html5, css/css3, Ajax, jQuery, Bootstrap, PHP, Yii PHP, Jasper Reports, Laravel, Vue JS and Redux.",
       responsibilities: [
         "Developed UI and functionality for generating large reports, including billing information and diagnoses.",
         "Designed print formats for reports using JasperReports.",
@@ -211,7 +214,8 @@ export const experience = {
       duration: "2017-06 - 2018-04",
       project: "IT Services",
       url: "",
-      techs: "Typescript, Javascript, MySQL, NoSQL, MongoDB, React JS, Node JS, Express, html/html5, css/css3, Ajax, jQuery, Bootstrap, PHP, Laravel, Vue JS, Vagrant, Homestead, Redux and SASS.",
+      techs:
+        "Typescript, Javascript, MySQL, NoSQL, MongoDB, React JS, Node JS, Express, html/html5, css/css3, Ajax, jQuery, Bootstrap, PHP, Laravel, Vue JS, Vagrant, Homestead, Redux and SASS.",
       responsibilities: [
         "Designed UI/UX layouts in Photoshop.",
         "Converted mockups to HTML and CSS.",
@@ -272,6 +276,10 @@ export const skills = {
     {
       icon: <SiNextdotjs />,
       name: "Next.js",
+    },
+    {
+      icon: <SiSupabase />,
+      name: "Supabase",
     },
     {
       icon: <SiTailwindcss />,
@@ -526,37 +534,48 @@ export const services = [
   },
 ];
 
-
 export const projects = [
   {
     num: "01",
     category: "",
     title: "Guest Checkout E-Commerce System",
     description:
-      "A modern e-commerce system that allows users to browse products, add items to cart, and complete payments via PayMongo without requiring user authentication, reducing friction and improving conversion rates.",
+      "A modern e-commerce system that allows users to browse products, add items to cart, and complete payments via Stripe without requiring user authentication, reducing friction and improving conversion rates.",
     stack: [
       { icon: "", name: "Next.js" },
       { icon: "", name: "React.js" },
       { icon: "", name: "TypeScript" },
       { icon: "", name: "Tailwind CSS" },
-      { icon: "", name: "shadcn/ui" },
-      { icon: "", name: "PayMongo" },
+      { icon: "", name: "Radix UI" },
       { icon: "", name: "Swiper.js" },
+      { icon: "", name: "Stripe" },
+      { icon: "", name: "Vercel" },
     ],
     image: "/assets/work/ecommerce.png",
+    video: "/assets/video/shop-ease.mp4",
     live: "https://shop-ease-kohl-two.vercel.app/",
     github: "https://github.com/marlonhario/ShopEase",
   },
   {
     num: "02",
-    category: "backend",
-    title: "project 2",
+    category: "",
+    title: "Real-time Social & Matchmaking App",
     description:
-      "Lorem Ipsum when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+      "TrueMatch is a real-time social app that allows users to connect and interact via chat and live streaming. Built with accessibility and performance in mind.",
+    stack: [
+      { icon: "", name: "Next.js" },
+      { icon: "", name: "React.js" },
+      { icon: "", name: "TypeScript" },
+      { icon: "", name: "Tailwind CSS" },
+      { icon: "", name: "Stream.io" },
+      { icon: "", name: "Radix UI / shadcn" },
+      { icon: "", name: "Supabase" },
+      { icon: "", name: "Vercel" },
+    ],
+    image: "/assets/work/true-match-image.png",
+    video: "/assets/video/true-match.mp4",
+    live: "https://true-match-three.vercel.app/",
+    github: "https://github.com/marlonhario/TrueMatch",
   },
   {
     num: "03",
