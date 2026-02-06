@@ -35,9 +35,7 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-
               <div className="border border-white/20"></div>
-
               {/* <div className="flex items-center gap-4 hidden lg:inline-flex">
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
@@ -50,6 +48,12 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
+                </Link>*/}
+              <div className="flex items-center gap-4">
+                <Link href={project.live}>
+                  <Button variant="outline" className="rounded-full">
+                    Live Demo
+                  </Button>
                 </Link>
 
                 <Link href={project.github}>
@@ -64,29 +68,7 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-              </div> */}
-
-              <div className="flex items-center gap-4">
-                <Link href={project.live}>
-                  <Button variant="outline" className="rounded-full">
-                    Live Demo
-                  </Button>
-                </Link>
-
-                {/* <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link> */}
               </div>
-
               <div className="gap-2 flex flex-col">
                 <h2 className="text-[30px] font-bold leading-9 text-white group-hover:text-accent transition-all duration-500 capitalize">
                   {project.title}
@@ -97,16 +79,19 @@ const Work = () => {
               </div>
               <p className="text-white/60">{project.description}</p>
 
-              <ul className="flex gap-4 flex-wrap leading-3">
-                {project.stack.map((Item, index) => {
-                  return (
-                    <li key={index} className="text-accent">
-                      {Item.name}
-                      {index !== project.stack.length - 1 && ","}
-                    </li>
-                  );
-                })}
-              </ul>
+              <div>
+                <p className="text-white/60 mb-3">Tech Stack :</p>
+                <ul className="flex gap-4 flex-wrap leading-3">
+                  {project.stack.map((Item, index) => {
+                    return (
+                      <li key={index} className="text-accent">
+                        {Item.name}
+                        {index !== project.stack.length - 1 && ","}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
@@ -120,18 +105,17 @@ const Work = () => {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      {/* overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={project.image}
-                          fill
-                          priority
-                          className="object-top"
-                          alt=""
-                        />
-                      </div>
+                      <video
+                        className="block w-full h-auto"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        poster={project.image}
+                        controls
+                      >
+                        <source src={project.video} type="video/mp4" />
+                      </video>
                     </div>
                   </SwiperSlide>
                 );
