@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { useState } from "react";
 import Link from "next/link";
 import {
@@ -11,10 +11,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 import { Button } from "@/components/ui/button";
-import { ShareIcon } from "lucide-react";
 import { projects } from "@/data/data";
 
 const Work = () => {
@@ -36,19 +34,6 @@ const Work = () => {
                 {project.num}
               </div>
               <div className="border border-white/20"></div>
-              {/* <div className="flex items-center gap-4 hidden lg:inline-flex">
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>*/}
               <div className="flex items-center gap-4">
                 <Link href={project.live}>
                   <Button variant="outline" className="rounded-full">
