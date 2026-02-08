@@ -10,14 +10,12 @@ const WorkSliderBtns = () => {
     <div className="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none">
       <Button
         variant="outline"
-        // className="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
         onClick={() => swiper.slidePrev()}
       >
         <PiCaretLeftBold />
       </Button>
       <Button
         variant="outline"
-        // className="bg-accent hover:bg-accent text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
         onClick={() => swiper.slideNext()}
       >
         <PiCaretRightBold />
