@@ -18,12 +18,6 @@ const Services = () => {
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:[-webkit-text-stroke:1px_#FA8146] transition-all duration-500">
                     {service.num}
                   </div>
-                  {/* <Link
-                    href={service.href}
-                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
-                  >
-                    <BsArrowDownRight className="text-primary text-3xl" />
-                  </Link> */}
                 </div>
                 {/* title */}
                 <h5 className="text-[25px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
