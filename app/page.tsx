@@ -6,14 +6,14 @@ import { FaDownload } from "react-icons/fa";
 
 export default function Home() {
   const intro =
-    "I build scalable, reliable, and user-friendly web applications, bridging frontend excellence with backend integration and data-driven solutions.";
+    "I build scalable, reliable, and user-friendly web applications with strong frontend architecture, backend integration, and performance-driven solutions.";
   
     return (
     <section className="h-full 2xl:pb-24">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-10">
           <div className="text-center xl:text-left order-2 xl:order-0">
-            <span className="text-xl">Senior Frontend Engineer</span>
+            <span className="text-xl">Full-stack Developer (Frontend-focused)</span>
             <h1 className="h2 mb-6">
               Hello, I&apos;m <br />{" "}
               <span className="text-white">Marlon Hario</span>

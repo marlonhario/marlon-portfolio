@@ -123,17 +123,17 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ScrollArea className="sm:h-[350px] h-[500px] md:h-[600px]">
+                <ScrollArea className="mb-20">
                   <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                    {skills.skillList.map((skill, index) => {
+                    {skills.skillList.map((skill) => {
                       return (
-                        <li key={index}>
+                        <li key={skill.name}>
                           <TooltipProvider delayDuration={100}>
                             <Tooltip>
-                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group flex-col">
-                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                              <TooltipTrigger className="w-full bg-[#232329] rounded-xl flex justify-center items-center group flex-col">
+                                {/* <div className="text-6xl group-hover:text-accent transition-all duration-300">
                                   {skill.icon}
-                                </div>
+                                </div> */}
                                 <span className="text-white/60">
                                   {skill.name}
                                 </span>

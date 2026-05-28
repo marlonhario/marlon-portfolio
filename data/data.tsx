@@ -48,7 +48,7 @@ export const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "I am a Senior React Developer with strong experience building scalable, high-performance web applications using React, Next.js, and TypeScript. I focus on clean, maintainable code with an emphasis on performance, accessibility, and user experience, while also working comfortably across the stack on backend logic, APIs, and data management. I prioritize application quality through end-to-end testing and enjoy tackling complex systems, improving existing codebases, and collaborating with teams to turn business requirements into reliable, production-ready solutions.",
+    "I am a Full-stack Developer with a strong focus on frontend development, experienced in building scalable, high-performance web applications using React, Next.js, and TypeScript. I specialize in creating clean, maintainable, and user-friendly interfaces with an emphasis on performance, accessibility, and overall user experience. Alongside frontend expertise, I work confidently across the stack handling backend logic, APIs, database integration, and application architecture. I value code quality, testing, and long-term maintainability, and I enjoy solving complex problems, improving existing systems, and collaborating with teams to deliver reliable, production-ready solutions.",
   items: [
     {
       company: "EncompaaS",
@@ -311,7 +311,7 @@ export const skills = {
     },
     {
       icon: <SiReactquery />,
-      name: "anStack React Query",
+      name: "TanStack React Query",
     },
     {
       icon: <SiShadcnui />,
@@ -329,10 +329,10 @@ export const skills = {
       icon: <SiJest />,
       name: "Jest",
     },
-    {
-      icon: <SiTestinglibrary />,
-      name: "Testing Library",
-    },
+    // {
+    //   icon: <SiTestinglibrary />,
+    //   name: "Testing Library",
+    // },
     {
       icon: <SiPostgresql />,
       name: "PostgreSQL",
@@ -357,10 +357,10 @@ export const skills = {
       icon: <SiApollographql />,
       name: "Apollo",
     },
-    {
-      icon: <SiVite />,
-      name: "SiVite",
-    },
+    // {
+    //   icon: <SiVite />,
+    //   name: "SiVite",
+    // },
     {
       icon: <SiSocketdotio />,
       name: "Socket.IO",
@@ -397,10 +397,10 @@ export const skills = {
       icon: <SiSass />,
       name: "Sass / SCSS",
     },
-    {
-      icon: <SiStyledcomponents />,
-      name: "styled-components",
-    },
+    // {
+    //   icon: <SiStyledcomponents />,
+    //   name: "styled-components",
+    // },
     {
       icon: <SiBootstrap />,
       name: "Bootstrap",
@@ -413,22 +413,163 @@ export const skills = {
       icon: <SiLaravel />,
       name: "Laravel",
     },
-    {
-      icon: <SiXampp />,
-      name: "XAMPP",
-    },
-    {
-      icon: <SiSublimetext />,
-      name: "Sublime Text",
-    },
-    {
-      icon: <SiNotepadplusplus />,
-      name: "Notepad++",
-    },
+    // {
+    //   icon: <SiXampp />,
+    //   name: "XAMPP",
+    // },
+    // {
+    //   icon: <SiSublimetext />,
+    //   name: "Sublime Text",
+    // },
+    // {
+    //   icon: <SiNotepadplusplus />,
+    //   name: "Notepad++",
+    // },
     // {
     //   icon: <SiAndroidstudio />,
     //   name: "Android Studio (Emulator)",
     // },
+    {
+      name: "NextAuth",
+    },
+
+    {
+      name: "Zod",
+    },
+    {
+      name: "tRPC",
+    },
+    {
+      name: "Prisma",
+    },
+    {
+      name: "Elasticsearch",
+    },
+    {
+      name: "Redis",
+    },
+    {
+      name: "Sentry",
+    },
+    {
+      name: "MUI",
+    },
+    {
+      name: "resend",
+    },
+    {
+      name: "AWS S3",
+    },
+    {
+      name: "AWS RDS",
+    },
+
+    {
+      name: "Docker",
+    },
+    {
+      name: "Jenkins (CI/CD)",
+    },
+    {
+      name: "HTML5",
+    },
+    {
+      name: "Playwright",
+    },
+    {
+      name: "NoSQL",
+    },
+    {
+      name: "Clerk",
+    },
+    {
+      name: "jQuery",
+    },
+    {
+      name: "WordPress",
+    },
+    {
+      name: "React native",
+    },
+    {
+      name: "Passport.js",
+    },
+    {
+      name: "Oauth",
+    },
+    {
+      name: "Nodemailer",
+    },
+    {
+      name: "SignalR",
+    },
+    {
+      name: "Maestro.io",
+    },
+    {
+      name: "Ant Design",
+    },
+    {
+      name: "VS Code",
+    },
+    {
+      name: "pgAdmin",
+    },
+    {
+      name: "DBeaver",
+    },
+    {
+      name: "Redis Insight",
+    },
+    {
+      name: "Kibana",
+    },
+    {
+      name: "GIt Bash",
+    },
+    {
+      name: "Docker Desktop",
+    },
+    {
+      name: "MongoDB Compass",
+    },
+    {
+      name: "Git Extension",
+    },
+    {
+      name: "XAMPP",
+    },
+    {
+      name: "WAMP",
+    },
+    {
+      name: "LAMP",
+    },
+    {
+      name: "AMPPS",
+    },
+    {
+      name: "Workbench",
+    },
+    {
+      name: "phpMyAdmin",
+    },
+
+    {
+      name: "SQLyog",
+    },
+    {
+      name: "Sublime Text",
+    },
+    {
+      name: "Notepad ++",
+    },
+    {
+      name: "Thunder Client",
+    },
+    {
+      name: "Android Studio(emulator)",
+    },
   ],
 };
 
@@ -470,7 +611,7 @@ export const about = {
     },
     {
       fieldName: "Age",
-      fieldValue: "33",
+      fieldValue: "34",
     },
     // {
     //   fieldName: "Freelance",
