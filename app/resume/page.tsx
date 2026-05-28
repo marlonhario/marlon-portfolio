@@ -37,7 +37,7 @@ const Resume = () => {
                 <p className="max-w-[1500px] text-white/60 mx-auto xl:mx-0 whitespace-pre-line">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[600px]">
+                <ScrollArea className="mb-20">
                   <ul className="grid grid-cols-1 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
