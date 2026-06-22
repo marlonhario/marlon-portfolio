@@ -48,7 +48,7 @@ export const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "I am a Full-stack Developer with a strong focus on frontend development, experienced in building scalable, high-performance web applications using React, Next.js, and TypeScript. I specialize in creating clean, maintainable, and user-friendly interfaces with an emphasis on performance, accessibility, and overall user experience. Alongside frontend expertise, I work confidently across the stack handling backend logic, APIs, database integration, and application architecture. I value code quality, testing, and long-term maintainability, and I enjoy solving complex problems, improving existing systems, and collaborating with teams to deliver reliable, production-ready solutions.",
+    "Senior React and Full Stack Developer with 6+ years of experience building enterprise SaaS platforms, healthcare systems, fintech applications, learning management systems, real-time communication platforms, and business management solutions. Proven expertise in React, Next.js, TypeScript, Node.js, GraphQL, AWS, PostgreSQL, and modern frontend architecture. Experienced in leading frontend initiatives, implementing scalable component libraries, improving code quality, and delivering high-performance applications across distributed teams.",
   items: [
     {
       company: "IT-SPAC",
@@ -69,7 +69,7 @@ export const experience = {
     {
       company: "XAM",
       position: "Senior React Developer",
-      duration: "Apr 2024 – Aug 2024",
+      duration: "Apr 2024 – Oct 2024",
       project: "thegrowthfaculty (Online Event and Learning Management System)",
       url: "https://thegrowthfaculty.com/",
       techs: "Typescript, React JS, Next JS and Maestro.io.",
@@ -127,25 +127,25 @@ export const experience = {
         "Developed features from Adobe XD mockups.",
       ],
     },
-    {
-      company: "Event Espresso",
-      position: "Front-end Developer",
-      duration: "Oct 2021 – Jun 2022",
-      project: "Wordpress Ticketing Plugin",
-      url: "https://eventespresso.com/",
-      techs:
-        "Typescript, React JS, React Query, Axios, SASS, Jest, Playwright and Redux.",
-      responsibilities: [
-        "Set up Jest for front-end testing.",
-        "Created unit tests for front-end components and functions.",
-        "Developed new features for plugins.",
-        "Assisted in fixing bugs and resolving issues.",
-      ],
-    },
+    // {
+    //   company: "Event Espresso",
+    //   position: "Front-end Developer",
+    //   duration: "Oct 2021 – Jun 2022",
+    //   project: "Wordpress Ticketing Plugin",
+    //   url: "https://eventespresso.com/",
+    //   techs:
+    //     "Typescript, React JS, React Query, Axios, SASS, Jest, Playwright and Redux.",
+    //   responsibilities: [
+    //     "Set up Jest for front-end testing.",
+    //     "Created unit tests for front-end components and functions.",
+    //     "Developed new features for plugins.",
+    //     "Assisted in fixing bugs and resolving issues.",
+    //   ],
+    // },
     {
       company: "Prospertogether",
       position: "Full-stack Developer",
-      duration: "Jul 2020 - Jul 2021",
+      duration: "Jul 2020 - Oct 2021",
       project: "Trading Platform",
       url: "http://www.prospertogether.com/",
       techs:
@@ -163,7 +163,7 @@ export const experience = {
     {
       company: "Sellgo",
       position: "Front-end Developer",
-      duration: "Jan 2020 - Aug 2020",
+      duration: "Jan 2020 - Jul 2020",
       project: "Amazon Seller Database",
       url: "https://www.linkedin.com/company/sellgo/",
       techs:
@@ -189,6 +189,21 @@ export const experience = {
         "Built report generation for billing and clinical data, including print formats (JasperReports).",
         "Created clinical and billing form UIs with complete functionality.",
         "Implemented backend APIs and database queries to support system features.",
+      ],
+    },
+    {
+      company: "Freelance",
+      position: "Front-end Developer",
+      duration: "May 2019 - Dec 2019",
+      project: "Blogs, Magazines and Hybrid landing page",
+      url: "https://www.segworks.com/",
+      techs: "Wordpress, Divi theme, HTML5, SASS.",
+      responsibilities: [
+        "Designed landing page mockups using Adobe Photoshop.",
+        "Created banners, logos, and graphic assets with Adobe Illustrator and Photoshop.",
+        "Built responsive WordPress websites using the Divi theme.",
+        "Installed and configured WordPress plugins and themes.",
+        "Customized websites based on client requirements.",
       ],
     },
     {
@@ -548,6 +563,30 @@ export const skills = {
     {
       name: "Android Studio(emulator)",
     },
+    {
+      name: "Ollama",
+    },
+    {
+      name: "DeepSeek R1",
+    },
+    {
+      name: "Qwen 3",
+    },
+    {
+      name: "Llama 3",
+    },
+    {
+      name: "Cursor AI",
+    },
+    {
+      name: "ChatGPT AI",
+    },
+    {
+      name: "Claude AI",
+    },
+    {
+      name: "Github Copilot",
+    },
   ],
 };
 
@@ -565,7 +604,7 @@ export const about = {
     // },
     {
       fieldName: "Experience",
-      fieldValue: "9+ years",
+      fieldValue: "6+ years",
     },
     // {
     //   fieldName: "Skype",
@@ -613,47 +652,67 @@ export const about = {
 export const services = [
   {
     num: "01",
-    title: "Senior Frontend / React Development",
+    title: "Senior React & Next.js Development",
     description:
-      "Designing and building scalable, high-performance user interfaces using modern React.",
+      "Build scalable, responsive, and maintainable web applications using React, Next.js, and TypeScript.",
     href: "",
   },
   {
     num: "02",
-    title: "Full-Stack Web Development",
+    title: "Full-Stack Application Development",
     description:
-      "Delivering end-to-end web solutions by handling both frontend and backend.",
+      "Develop end-to-end SaaS and enterprise applications with modern frontend and backend technologies.",
     href: "",
   },
   {
     num: "03",
-    title: "Backend Development",
+    title: "API Development & Integration",
     description:
-      "Building reliable and secure backend systems to support web applications.",
+      "Design and integrate REST APIs, GraphQL, authentication, and third-party services.",
     href: "",
   },
   {
     num: "04",
-    title: "End-to-End (E2E) Testing",
+    title: "Performance & Frontend Optimization",
     description:
-      "Ensuring application reliability through comprehensive automated testing.",
+      "Improve application performance, code quality, accessibility, and user experience.",
     href: "",
   },
   {
     num: "05",
-    title: "Data Management & Integration",
-    description: "Handling application data efficiently and securely.",
+    title: "Testing & Quality Assurance",
+    description:
+      "Implement unit and end-to-end testing using Jest and Playwright to ensure reliable releases.",
     href: "",
   },
   {
     num: "06",
-    title: "Code Quality & Maintenance",
-    description: "Improving and maintaining existing codebases.",
+    title: "Legacy Modernization & Feature Development",
+    description:
+      "Enhance existing applications by refactoring code, fixing production issues, and delivering new features.",
     href: "",
   },
 ];
 
 export const projects = [
+  {
+    num: "01",
+    category: "",
+    title: "Infinite Scroll Photo Gallery Application",
+    description:
+      "A simple infinite scroll image gallery that lets you explore photos seamlessly without pagination, just scroll and discover.",
+    stack: [
+      { icon: "", name: "Next.js" },
+      { icon: "", name: "React.js" },
+      { icon: "", name: "Tailwind v4" },
+      { icon: "", name: "Tailwind CSS" },
+      { icon: "", name: "shadcn/ui" },
+    ],
+    image: "/assets/work/lumina-cover.png",
+    video: "",
+    live: "https://infinite-scroll-gallery-lake.vercel.app/",
+    github: "",
+  },
   {
     num: "01",
     category: "",

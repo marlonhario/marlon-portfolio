@@ -99,7 +99,7 @@ const Work = () => {
                         poster={project.image}
                         controls
                       >
-                        <source src={project.video} type="video/mp4" />
+                        {project.video && <source src={project.video} type="video/mp4" />}
                       </video>
                     </div>
                   </SwiperSlide>
